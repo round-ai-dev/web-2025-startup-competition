@@ -1,0 +1,297 @@
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+/* 추가: 색상 변수 정의 (최상단에 추가) */
+:root {
+  --dark-bg: #121212;
+  --text-white: #ffffff;
+  --text-gray: #aaaaaa;
+  --accent-blue: #00b0ff; /* 더 쨍한 파란색 */
+  --accent-lightblue: #40c4ff; /* 더 밝고 쨍한 하늘색 */
+  --accent-purple: #7c4dff; /* 더 쨍한 보라색 */
+  --dark1: #2f2f2f;
+  --dark2: #646464;
+  --dark3: #a0a0a0;
+  --dark4: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.poppins-thin {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: var(--font-pretendard), "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.suse-thin {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.suse-extralight {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.suse-light {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.suse-regular {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.suse-medium {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.suse-semibold {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.suse-bold {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.dark1 {
+  color: var(--dark1);
+}
+
+.dark1_background {
+  background-color: var(--dark1);
+}
+
+.dark2 {
+  color: var(--dark2);
+}
+
+.dark2_background {
+  background-color: var(--dark2);
+}
+
+.dark3 {
+  color: var(--dark3);
+}
+
+.dark3_background {
+  background-color: var(--dark3);
+}
+
+.dark4 {
+  color: var(--dark4);
+}
+
+.dark4_background {
+  background-color: var(--dark4);
+}
+
+.blue1 {
+  color: var(--accent-blue);
+}
+
+.blue1_background {
+  background-color: var(--accent-blue);
+}
+
+.blue2 {
+  color: var(--accent-lightblue);
+}
+
+.blue2_background {
+  background-color: var(--accent-lightblue);
+}
+
+.blue3 {
+  color: var(--accent-purple);
+}
+
+.blue3_background {
+  background-color: var(--accent-purple);
+}
+
+.white {
+  color: var(--text-white);
+}
+
+.white_background {
+  background-color: var(--text-white);
+}
